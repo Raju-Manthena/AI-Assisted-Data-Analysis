@@ -38,24 +38,22 @@ The application integrates a single-agent tool-calling architecture using LangCh
 - Generates key findings from the uploaded dataset.
 - Provides actionable recommendations.
 - Uses Python-based statistical analysis combined with LLM-generated interpretations.
-
+  
 ## System Architecture
 
-The application consists of two main analytical workflows:
+The application is organized into two main components:
 
-**1. Single-Agent Tool-Calling Workflow**
+**1. Statistical Analysis**
 
-1. User submits a natural-language question.
-2. The LLM interprets the question and selects appropriate analytical tools.
-3. Python functions process the dataset and return computed results.
-4. The LLM uses the results to formulate a response.
+- Performs dataset profiling, including missing value analysis, duplicate detection, and statistical summaries.
+- Provides data visualizations to explore patterns and distributions.
+- Supports SQL-based querying using DuckDB.
 
-**2. Automated Insights Workflow**
+**2. AI-Powered Analysis**
 
-1. Python performs statistical analysis on the dataset.
-2. Computed statistics are passed to the LLM.
-3. The LLM interprets the results.
-4. Key findings and recommendations are generated.
+- Uses a single-agent tool-calling architecture to answer natural-language questions about datasets.
+- Dynamically selects Python analytical tools based on user queries.
+- Generates automated insights, key findings, and recommendations by combining statistical results with LLM-based interpretation.
 
 ## Tech Stack
 
