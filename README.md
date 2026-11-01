@@ -1,5 +1,7 @@
 # AI-Assisted Data Analysis
 
+**Live Demo:** [Try the Application](https://ai-assisted-data-analysis-altfka4fhfszs8gfxqbpd6.streamlit.app/) 
+
 An AI-powered data analysis application that combines traditional statistical analysis, SQL querying, and Generative AI to help users explore datasets and generate actionable insights.
 
 ## Overview
